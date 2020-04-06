@@ -4,13 +4,12 @@
     "default": {
       "connector": "mongoose",
       "settings": {
-        "host": "${process.env.DATABASE_HOST || '127.0.0.1'}",
-        "port": "${process.env.DATABASE_PORT || 27017}",
-        "database": "${process.env.DATABASE_NAME || 'strapi'}",
-        "username": "${process.env.DATABASE_USERNAME || ''}",
-        "password": "${process.env.DATABASE_PASSWORD || ''}"
+        "client": "mongo",
+        "uri": "mongodb://alexandreabreu:privado147896321@cluster0-shard-00-00-xtnoo.mongodb.net:27017,cluster0-shard-00-01-xtnoo.mongodb.net:27017,cluster0-shard-00-02-xtnoo.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority"
       },
-      "options": {}
+      "options": {
+        "ssl" : true
+      }
     }
   }
 }
