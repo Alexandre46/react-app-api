@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "projects",
+  "info": {
+    "name": "projects"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "info": {
+      "type": "richtext"
+    },
+    "created_at": {
+      "type": "datetime"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "category": {
+      "model": "categories",
+      "via": "project"
+    }
+  }
+}

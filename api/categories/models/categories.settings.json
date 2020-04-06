@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "categories",
+  "info": {
+    "name": "Categories"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "media": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "project": {
+      "via": "category",
+      "model": "projects"
+    },
+    "subcategory": {
+      "via": "category",
+      "model": "subcategory"
+    }
+  }
+}
