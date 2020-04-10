@@ -26,8 +26,8 @@
       "required": false
     },
     "category": {
-      "model": "categories",
-      "via": "subcategory"
+      "via": "subcategory",
+      "model": "categories"
     }
   }
 }
