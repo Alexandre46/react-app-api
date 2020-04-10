@@ -21,10 +21,6 @@
     },
     "active": {
       "type": "boolean"
-    },
-    "category": {
-      "model": "categories",
-      "via": "project"
     }
   }
 }
